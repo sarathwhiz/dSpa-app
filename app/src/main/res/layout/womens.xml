@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/qwert">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/user"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_usernew"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            android:text="Sarath vinayan"
+            android:textSize="16dp"
+            android:id="@+id/womenuser" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#77000000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@drawable/spa123"/>-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:fillViewport="true">-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/spaicon"/>
+
+                    <ListView
+
+                        android:id="@+id/listwomens"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:divider="@color/colorAccent"
+                        android:dividerHeight="0.5dip"
+
+                        />
+
+
+                </LinearLayout>
+
+            <!--</ScrollView>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

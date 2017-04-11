@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stud"
+    tools:context=".MenListItem">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/user"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_usernew"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            android:text="Sarath vinayan"
+            android:textSize="16dp"
+            android:id="@+id/itemuser" />
+
+        <ImageView
+            android:id="@+id/itemcart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="itemcart"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_cart"/>
+
+    </LinearLayout>
+
+    <!--<ImageButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:onClick="goback"-->
+        <!--android:src="@drawable/ic_backpress"-->
+        <!--android:background="#00000000"-->
+        <!--/>-->
+
+    <!--<ImageButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:onClick="backtoregular"-->
+        <!--android:src="@drawable/ic_backpress"-->
+        <!--android:background="#00000000"-->
+        <!--/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="35dp"
+        android:background="#c310120f">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+
+        <ListView
+        android:id="@+id/listmenthread"
+        android:divider="@color/colorAccent"
+        android:dividerHeight="0.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.Whiz.vaishali.deSpa">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/spaicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".TheDeSpaStudio"
+            android:label="@string/title_activity_main2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".HomePage" />
+        <activity android:name=".Photo" />
+        <activity
+            android:name=".RegularWomens"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Womens"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Mens"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ThreadingWomen" />
+        <activity
+            android:name=".RegularMens"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Suggestion"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".MenListItem"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ContactUs" />
+        <activity android:name=".Cart" />
+        <activity android:name=".CartActicity" />
+        <activity android:name=".Portfolio" />
+        <activity android:name=".ImageAdapter" />
+        <activity
+            android:name=".Feedback"
+            android:screenOrientation="portrait" />
+        <activity android:name=".AboutUs" />
+        <activity android:name=".BookingActivity" />
+        <activity android:name=".VisitUs" />
+        <activity
+            android:name=".LoginForm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignUp"
+            android:screenOrientation="portrait" />
+        <activity android:name=".SpecialOffers" />
+        <activity
+            android:name=".ForgotPassword"
+            android:screenOrientation="portrait" />
+        <activity android:name=".CustomListThreadingWomens" />
+        <activity
+            android:name=".WomenListItem"
+            android:screenOrientation="portrait" />
+        <activity android:name=".DirectionActivity" />
+        <activity android:name=".Twitter" />
+        <activity android:name=".Facebookpage_activity" />
+        <activity android:name=".CustomAdapterItem" />
+        <activity android:name=".CustomAdapterCart" />
+        <activity android:name=".MyApointmentFragment" />
+
+        <application
+            android:allowBackup="true"
+            android:hardwareAccelerated="false"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:largeHeap="true"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme" />
+
+        <activity android:name=".MyAppointmentActivity"></activity>
+    </application>
+
+</manifest>

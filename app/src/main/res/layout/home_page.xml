@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.Whiz.vaishali.deSpa.HomePage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#000000"
+        tools:context="com.Whiz.vaishali.myspa.MainActivity">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#ffffff"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="35dp"
+                    android:id="@+id/men"
+                    android:textColor="#ffffff"
+                    android:text="Mens"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="mens"
+                    android:id="@+id/mens"
+                    android:background="@drawable/mens1"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="35dp"
+                    android:id="@+id/women"
+                    android:textColor="#ffffff"
+                    android:text="Womens"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="women"
+                    android:id="@+id/womens"
+                    android:background="@drawable/womens1" />
+
+            </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ViewFlipper
+                    android:id="@+id/bckgrndViewFlipper1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="30dp">
+                    <ImageView
+                        android:id="@+id/bckgrndImageView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/add1" />
+                    <ImageView
+                        android:id="@+id/bckgrndImageView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/add2" />
+                    <ImageView
+                        android:layout_width="400dp"
+                        android:layout_height="350dp"
+                        android:background="@drawable/add3" />
+
+
+                </ViewFlipper>
+
+
+                <!--<Button android:id="@+id/btnLogout"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Logout"/>-->
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
+    </FrameLayout>
+
+</ScrollView>
+
+

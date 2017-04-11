@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/grp1" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        </group>
+
+    <group android:id="@+id/grp2" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Portfolio" />
+        </group>
+
+    <group android:id="@+id/grp3" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_local_grocery_store_black_24dp"
+            android:title="Cart" />
+       </group>
+
+    <group android:id="@+id/grpP" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="My Appointments" />
+    </group>
+
+
+    <group android:id="@+id/grp4" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_aboutus"
+            android:icon="@drawable/ic_people_black_24dp"
+            android:title="About Us" />
+        </group>
+
+    <group android:id="@+id/grp5" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_contactus"
+            android:icon="@drawable/ic_ring_volume_black_24dp"
+            android:title="Contact Us" />
+    </group>
+
+    <group android:id="@+id/grp6" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_chat_black_24dp"
+            android:title="Feedback" />
+    </group>
+
+    <group android:id="@+id/grp7" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_offer"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="Special Offers" />
+
+    </group>
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="Share" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Send" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+    </menu>

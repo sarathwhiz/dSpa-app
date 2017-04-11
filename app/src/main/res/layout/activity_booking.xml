@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/ppp"
+        tools:context=".BookingActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#000000"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/user"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_usernew"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#ffffff"
+                android:text="Sarath vinayan"
+                android:textSize="16dp"
+                android:id="@+id/bookinguser" />
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="#a3000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<ImageButton-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/ic_back"-->
+           <!---->
+
+            <!--/>-->
+
+
+        <!--android:background="#386106"-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Appointment"
+            android:id="@+id/bookapp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:text="Name :"
+            android:id="@+id/name"
+            android:textColor="#ffffff"
+            android:textSize="22dp"/>
+
+        <EditText
+            android:id="@+id/bookingname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="qwertzuiopasdfghjklyxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+            android:textColor="#ffffff"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mobile No :"
+            android:id="@+id/mob"
+            android:textColor="#ffffff"
+            android:textSize="22dp"/>
+
+        <EditText
+            android:id="@+id/bookingmobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="11"
+            android:textColor="#ffffff"
+            android:inputType="number"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:id="@+id/email"
+            android:text="Email Id :"
+            android:textSize="22dp"/>
+
+        <EditText
+            android:id="@+id/bookingemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:inputType="textEmailAddress"
+            android:layout_weight="1"/>
+        </LinearLayout>
+
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <Button
+               android:id="@+id/btn_date"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="30dp"
+               android:text="select date"
+               android:textColor="#f76f06"
+               android:background="#00000000"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentStart="true"
+               />
+
+           <TextView
+               android:id="@+id/in_date"
+               android:layout_width="150dp"
+               android:layout_height="40dp"
+               android:layout_marginTop="5dp"
+               android:background="#20000000"
+               android:textSize="18dp"
+               android:gravity="center"
+               android:textColor="#e3ffffff"
+               android:textColorHint="#8effffff"
+               android:layout_alignTop="@+id/btn_date"
+               android:layout_toRightOf="@+id/btn_date"
+               android:layout_toEndOf="@+id/btn_date"
+               android:layout_marginLeft="38dp"
+               android:layout_marginStart="38dp" />
+
+           <Button
+               android:id="@+id/btn_time"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="select time"
+               android:textColor="#f76f06"
+               android:background="#00000000"
+               android:layout_below="@+id/btn_date"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentStart="true"
+               />
+
+           <TextView
+               android:id="@+id/in_time"
+               android:layout_width="150dp"
+               android:layout_height="40dp"
+               android:layout_marginTop="5dp"
+               android:background="#20000000"
+               android:gravity="center"
+               android:textSize="18dp"
+               android:textColor="#e3ffffff"
+               android:textColorHint="#8effffff"
+               android:layout_below="@+id/btn_date"
+               android:layout_alignLeft="@+id/in_date"
+               android:layout_alignStart="@+id/in_date" />
+
+       </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Selected List of Services"
+                android:textColor="#ffffff"
+                />
+        <View
+            android:layout_width="158dp"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/rectangle"
+            android:layout_weight="1"
+            android:layout_margin="22dp">
+
+            <ListView
+                android:id="@+id/cust_listView2"
+                android:divider="@color/colorAccent"
+                android:dividerHeight="0.5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:text="Total:"/>
+
+            <TextView
+                android:id="@+id/bookingtotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:background="#000000"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="#ffffff"
+                android:text=""/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/appointment"
+
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:background="#82ffffff"
+            android:layout_marginTop="20dp"
+            android:textSize="22dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!--<Button-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:id="@+id/refreshbook"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="34dp"-->
+            <!--android:onClick="refresh"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:background="#000000"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:text="Refresh"/>-->
+
+
+    </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

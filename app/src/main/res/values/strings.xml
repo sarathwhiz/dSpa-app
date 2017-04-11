@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DeSpaApp</string>
+    <string name="title_activity_main2">DeSpa Studio</string>
+    <string name="facebook_app_id">162458330884765</string>
+    //130425520769456
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Cart</string>
+    <string name="action_exit">Exit</string>
+    <string name="hello">Hello World,PortfolioActivity!</string>
+
+</resources>
+

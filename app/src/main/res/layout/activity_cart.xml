@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stud"
+    tools:context="com.Whiz.vaishali.deSpa.Cart">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/user"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_usernew"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            android:text="Sarath vinayan"
+            android:textSize="16dp"
+            android:id="@+id/cartuser" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="My Cart"
+            android:textColor="#ffffff"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#92000000"
+        >
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="1"
+        android:layout_margin="30dp"
+        android:background="@drawable/rectangle"
+        >
+
+
+
+        <ListView
+            android:id="@+id/cust_listView1"
+            android:divider="@color/colorAccent"
+            android:dividerHeight="0.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/cartliner"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="200dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_margin="30dp"-->
+            <!--android:gravity="center"-->
+            <!--android:background="@drawable/rectangle"-->
+            <!--&gt;-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/carttext"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="21dp"-->
+                <!--android:typeface="monospace"-->
+                <!--android:text="Your cart is empty"-->
+                <!--android:textColor="#ffffff"-->
+                <!--/>-->
+
+<!--</LinearLayout>-->
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:text="Total:"/>
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:background="#000000"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="#ffffff"
+                android:text=""/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <Button
+
+                android:id="@+id/cartbooking"
+                android:layout_width="200dp"
+                android:layout_height="34dp"
+                android:onClick="cartbooking"
+                android:background="@drawable/button1"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:text="Book Now"/>
+
+
+            <!--<Button-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:id="@+id/refresh"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="34dp"-->
+                <!--android:onClick="refresh"-->
+                <!--android:background="@drawable/button1"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:text="Refresh"/>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
+
+<!--<ImageButton-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:src="@drawable/ic_backpress"-->
+<!--android:background="#00000000"-->
+
+    <!--/>-->
